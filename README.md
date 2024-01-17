@@ -1,6 +1,7 @@
 # CrUX Report
 
 This project was developed for getting web vitals report for any page URL on the internet.
+Application URL: https://crux-report-390be24b8757.herokuapp.com/
 
 ## Technologies used
 

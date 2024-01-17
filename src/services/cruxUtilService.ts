@@ -12,8 +12,8 @@ export const CrUXApiUtil: CrUXApiUtilType = {
     }
 };
 
-// CrUXApiUtil.API_KEY = 'AIzaSyCY6aqEKKaRO42r6M2yT4FsBb7oawK15aQ';
-CrUXApiUtil.API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = 'AIzaSyCY6aqEKKaRO42r6M2yT4FsBb7oawK15aQ';
+CrUXApiUtil.API_KEY = process.env.REACT_APP_API_KEY || API_KEY;
 CrUXApiUtil.API_ENDPOINT = `https://chromeuxreport.googleapis.com/v1/records:queryRecord?key=${CrUXApiUtil.API_KEY}`;
 CrUXApiUtil.query = async function (requestBody: any) {
     return fetch(CrUXApiUtil.API_ENDPOINT, {
